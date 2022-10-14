@@ -1,0 +1,140 @@
+
+
+.jobs__hero
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+.jobs__hero__container
+{
+    width: 1200px;
+    height: 550px;
+}
+
+.jobs__details
+{
+    margin-top: 200px;
+    color: #fff;
+    width: 50%;
+}
+
+.jobs__details h3
+{
+
+    font-size: 25px;
+    font-weight: 700;
+    transition: 300ms all;
+    
+}
+
+.jobs__details h3:hover
+{
+    cursor: pointer;
+    color: lightgray;
+
+}
+
+.jobs__details h2
+{
+ font-size: 40px;
+ font-weight: 900;
+ transition: 300ms all;
+
+}
+
+.jobs__details h2:hover
+{
+    cursor: pointer;
+    color: lightgray;
+}
+
+.jobs__page
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.jobs__page__container
+{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.block__container
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+
+.jobs__page__block
+{   
+    
+    display: flex;
+    margin-top: 20px;
+    height: 200px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.jobs__lb
+{
+   align-items: center;
+    display: flex;
+    
+}
+
+.jobs__lb img 
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 100px;
+}
+
+.jobs__lb__details 
+{
+  
+    width: 300px;
+}
+
+.jobs__lb__details p 
+{
+    line-height: 2;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.jobs__lb__details p:nth-child(1)
+{
+    color: gray;
+}
+
+.jobs__rb
+{
+    align-items: center;
+    display: flex;
+    margin-right: 30px;
+}
+
+
+.jobs__rb p 
+{
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 170px;
+    line-height: 2;
+    color: gray;
+}

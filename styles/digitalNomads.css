@@ -1,0 +1,81 @@
+
+
+.dn__hero
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1663619207118-00cfad465479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+
+.st__background
+{
+    background-image: url(https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+}
+
+.dn__hero__container
+{
+    width: 1200px;
+    height: 550px;
+}
+
+.dn__details
+{
+    margin-top: 200px;
+    color: #fff;
+    width: 50%;
+}
+
+.dn__details h3
+{
+
+    font-size: 25px;
+    font-weight: 700;
+    transition: 300ms all;
+    
+}
+
+.dn__details h3:hover
+{
+    cursor: pointer;
+    color: lightgray;
+
+}
+
+.dn__details h2
+{
+ font-size: 40px;
+ font-weight: 900;
+ transition: 300ms all;
+
+}
+
+.dn__details h2:hover
+{
+    cursor: pointer;
+    color: lightgray;
+}
+
+.dn__creator
+{
+    display: flex;
+}
+
+.dn__creator p
+{
+    font-size: 25px;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.dn__creator p:hover
+{
+    cursor: pointer;
+    color: lightgray;
+}
+

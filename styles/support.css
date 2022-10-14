@@ -1,0 +1,76 @@
+.support{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.support-container{
+    background-color: #b0daf1;
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .support-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left:30px ;
+    font-size: 5rem;
+    color: #0015ae;
+  }
+  .support-text{
+    margin-left:30px ;
+    width: 60%;
+    font-size: 2.5rem;
+   
+  }
+  .support-btn{
+    margin-top: 20px;
+    font-weight: 600;
+    margin-left:50px ;
+    border-radius: 20px;
+    padding: 10px;
+    width: 10%;
+    font-size: 17px ;
+    background-color: #0015ae ;
+    color: white;
+    border: none;
+  }
+
+  @media only screen and (max-width: 820px) {
+  .support-container 
+  {
+    height: 400px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .support-title
+  {
+    padding-top: 50px;
+    margin: 0;
+    font-size: 50px;
+  }
+
+  .support-text
+  {
+    width: 90%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    margin-top: 40px;
+  }
+
+  .support-btn
+  {
+    margin: 0;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;   
+    margin-top: 40px;
+  }
+
+  }
