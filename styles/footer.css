@@ -1,0 +1,66 @@
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container
+{   
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter
+{
+    width: 25%;
+}
+
+.newsletter h4 
+{
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.newsletter p 
+{
+    margin-bottom: 15px;
+}
+
+.newsletter button 
+{
+    height: 35px;
+    width: 135px;
+    background-color: #0015ae;
+    border: 1px solid #0015ae;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.newsletter button:hover
+{
+    cursor: pointer;
+}
+
+.footer__menu h4
+{
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer__menu li 
+{
+    margin-bottom: 10px;
+}
+
+.footer__menu li:hover
+{
+    cursor: pointer;
+}
