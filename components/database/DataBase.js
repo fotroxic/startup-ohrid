@@ -188,7 +188,7 @@ export default function db() {
                 "dnTitle": "Integrit Tech Comp",
                 "dnDesc":" Lorem Ipsum  Nullam porta vitae turpis non scelerisque. Aenean egestas",
                 "creatorLogo": "https://en.split-techcity.com/wp-content/uploads/sites/2/2021/05/stc-logo-circle.svg",
-                "dnCreator" : "Split Tech City"
+                "dnCreator" : "Split Tech Cityyy"
             },
             {
                 "id":2,
