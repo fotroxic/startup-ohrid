@@ -1,5 +1,6 @@
 import Carousel from "react-elastic-carousel";
 import Link from "next/link";
+import Item from "./Item";
 import axios from "axios";
 import React, {Component} from "react";
 
