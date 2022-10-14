@@ -1,12 +1,13 @@
 import Carousel from "react-elastic-carousel";
-import Link from "next/link";
 import Item from "./Item";
+import Link from "next/link";
 import axios from "axios";
 import React, {Component} from "react";
+import content from './data'
 
 
 const api = axios.create({
-  baseURL: 'http://localhost:800/content'
+  baseURL: 'http://localhost:3000/content'
 })
 
 const breakPoints = [
