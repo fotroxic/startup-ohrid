@@ -22,14 +22,12 @@ const months = {
 const formatDate = (date) => {
     const datetimeArray = date.split("T")
     const dateArray = datetimeArray[0].split("-")
-    const timeArray = datetimeArray[1].split(":")
     const month = dateArray[1]
     const monthName = months[dateArray[1]]
     const day = dateArray[2]
     const year = dateArray[0]
-    const time = `${timeArray[0]}:${timeArray[1]}`
 
-    return {"month": month, "monthName": monthName, "day": day, "year": year, "time": time}
+    return {"month": month, "monthName": monthName, "day": day, "year": year}
 }
 
   
