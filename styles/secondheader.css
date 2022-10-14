@@ -1,0 +1,109 @@
+.first__header
+{
+
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.second__header
+{
+    
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 60px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+
+
+}
+
+.s__header__container
+{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.header__links
+{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.header__links p{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.header__links p:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.header__buttons{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__buttons button 
+{
+    margin-right: 20px;
+    border: 1px solid gray;
+    width: 170px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 450;
+    transition: 500ms all;
+}
+
+
+.header__buttons button:hover
+{
+    background-color: black;
+    color: #fff;
+}
+
+.right__sticky__buttons
+{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 336px;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.right__sticky__buttons button
+{
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.menu__box
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin-right: 30px;
+}
