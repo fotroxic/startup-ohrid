@@ -1,3 +1,4 @@
+
 import '../styles/globals.css'
 import '../styles/header.css'
 import '../styles/herobanner.css'
@@ -17,7 +18,6 @@ import '../styles/latest.css'
 import '../styles/communityPage.css'
 import { LayoutGroup } from 'framer-motion'
 import DarkModeSwitch from '../components/header/DarkModeSwitch.jsx'
-import SecondHeader from '../components/header/SecondHeader'
 import Footer from '../components/footer/Footer'
 import { ChakraProvider } from "@chakra-ui/react";
 import '../styles/digitalNomads.css'
@@ -27,16 +27,18 @@ import '../styles/secondheader.css'
 import '../styles/becomeMember.css'
 import '../styles/contact.css'
 
+
 function MyApp({ Component, pageProps }) {
+
   return <>
-   <LayoutGroup>
+  <LayoutGroup>
  <ChakraProvider>
     <DarkModeSwitch />
     </ChakraProvider> 
-    <SecondHeader />
   <Component {...pageProps} />
   <Footer />
-  </LayoutGroup>  
+  </LayoutGroup>
+
   </>
 }
 

@@ -1,8 +1,9 @@
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import Link from "next/link";
+import posts from "../../database/db.json"
 import React, {Component} from "react";
-import posts from '../../database/db.json'
+
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -11,8 +12,7 @@ const breakPoints = [
     { width: 1200, itemsToShow: 4 },
   ];
 
-export default class NewsSlider extends Component {
-
+export default class SingleNew extends Component {
 
 render(){
   return (
@@ -22,12 +22,15 @@ render(){
          <h1 style={{ textAlign: "center" }}>News & Events </h1>
       <div className="App">
         <Carousel breakPoints={breakPoints}>
+         
           {posts.content.map(content =><Link key={content.id} href={`/news/${content.link}`}><Item className="news__block" key={content.id} style={{backgroundImage: `url(${content.contentImg})`}} >
         <h3 key={content.id}>{content.title}</h3></Item></Link>
           )}
   
         
         </Carousel>
+
+        
       </div>
       <div className="view__more">
       <Link href="/news">
