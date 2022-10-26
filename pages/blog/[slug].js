@@ -11,14 +11,21 @@ export default function Blog({ frontmatter, markdown}) {
       </Head>
       <hr />
       
-      <img src={frontmatter.thumbnail}></img>
-      <ReactMarkdown>
+     <div className='post__slug'>
+      <div className='post__slug__container'>
+      <h1 className='post__title'>{frontmatter.title}</h1>
+      <img className='post__img' src={frontmatter.thumbnail}></img>
+      <ReactMarkdown className='post__text'>
         {markdown}
       </ReactMarkdown>
-      <h1>{frontmatter.title}</h1>
+      
+      </div>
+     </div>
     </div>
   )
 }
+
+
 
 export async function getStaticProps({ params: { slug } }) {
   const fileContent = matter(fs.readFileSync(`./content/blogs/${slug}.md`, 'utf8'))
