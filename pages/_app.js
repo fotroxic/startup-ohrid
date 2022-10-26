@@ -26,6 +26,7 @@ import '../styles/searchBar.css'
 import '../styles/secondheader.css'
 import '../styles/becomeMember.css'
 import '../styles/contact.css'
+import '../styles/blogSlug.css'
 
 
 function MyApp({ Component, pageProps }) {

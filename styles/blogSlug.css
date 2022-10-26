@@ -1,0 +1,41 @@
+.post__slug
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+   
+}
+
+
+.post__slug__container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+}
+
+.post__title
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.post__img
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+.post__text
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 750px;
+}

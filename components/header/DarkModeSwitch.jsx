@@ -289,7 +289,7 @@ const NAV_ITEMS = [
     href: '/community',
   },
   {
-    label: 'Digital Nomads',
-    href: '/digital-nomads',
+    label: 'Blogs',
+    href: '/blog',
   },
 ];
