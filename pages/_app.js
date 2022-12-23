@@ -34,13 +34,13 @@ function MyApp({ Component, pageProps }) {
 
   return <>
   <LayoutGroup>
-  <HubspotProvider>
+ 
  <ChakraProvider>
     <DarkModeSwitch />
     </ChakraProvider> 
   <Component {...pageProps} />
   <Footer />
-  </HubspotProvider>
+  
   </LayoutGroup>
 
   </>
