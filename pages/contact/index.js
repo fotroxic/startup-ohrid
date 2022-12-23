@@ -13,7 +13,7 @@ export default function ContactPage() {
 
   return (
     <>
-<div id="hubspot-form-wrapper" />
+<div htmlFor="hubspot-form-wrapper" />
     </>
   )
 }
