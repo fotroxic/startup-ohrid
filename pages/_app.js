@@ -27,17 +27,20 @@ import '../styles/secondheader.css'
 import '../styles/becomeMember.css'
 import '../styles/contact.css'
 import '../styles/blogSlug.css'
+import { HubspotProvider } from 'next-hubspot';
 
 
 function MyApp({ Component, pageProps }) {
 
   return <>
   <LayoutGroup>
+  <HubspotProvider>
  <ChakraProvider>
     <DarkModeSwitch />
     </ChakraProvider> 
   <Component {...pageProps} />
   <Footer />
+  </HubspotProvider>
   </LayoutGroup>
 
   </>
