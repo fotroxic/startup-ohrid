@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import React from 'react'
 
 const AccountSettings = () => {
@@ -138,7 +139,7 @@ const AccountSettings = () => {
 								<div className="form-group">
 									<div className="form-check">
 										<input className="form-check-input" type="checkbox" value="" id="recovery"/>
-										<label className="form-check-label" for="recovery">
+										<label className="form-check-label" htmlFor="recovery">
 										Recovery
 										</label>
 									</div>
@@ -157,13 +158,13 @@ const AccountSettings = () => {
 								<div className="form-group">
 									<div className="form-check">
 										<input className="form-check-input" type="checkbox" value="" id="app-check" />
-										<label className="form-check-label" for="app-check" >
+										<label className="form-check-label" htmlFor="app-check" >
 										App check
 										</label>
 									</div>
 									<div className="form-check">
 										<input className="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-										<label className="form-check-label" for="defaultCheck2">
+										<label className="form-check-label" htmlFor="defaultCheck2">
 										Lorem ipsum dolor sit.
 										</label>
 									</div>
@@ -180,7 +181,7 @@ const AccountSettings = () => {
 						<div className="form-group">
 							<div className="form-check">
 								<input className="form-check-input" type="checkbox" value="" id="notification1" />
-								<label className="form-check-label" for="notification1">
+								<label className="form-check-label" htmlFor="notification1">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusantium accusamus, neque cupiditate quis
 								</label>
 							</div>
@@ -188,7 +189,7 @@ const AccountSettings = () => {
 						<div className="form-group">
 							<div className="form-check">
 								<input className="form-check-input" type="checkbox" value="" id="notification2" />
-								<label className="form-check-label" for="notification2">
+								<label className="form-check-label" htmlFor="notification2">
 									hic nesciunt repellat perferendis voluptatum totam porro eligendi.
 								</label>
 							</div>
@@ -196,7 +197,7 @@ const AccountSettings = () => {
 						<div className="form-group">
 							<div className="form-check">
 								<input className="form-check-input" type="checkbox" value="" id="notification3" />
-								<label className="form-check-label" for="notification3">
+								<label className="form-check-label" htmlFor="notification3">
 									commodi fugiat molestiae tempora corporis. Sed dignissimos suscipit
 								</label>
 							</div>
@@ -215,9 +216,9 @@ const AccountSettings = () => {
 
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <Script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></Script>
+	<Script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></Script>
+	<Script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></Script>
 
 
     </div>
