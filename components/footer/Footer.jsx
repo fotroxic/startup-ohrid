@@ -1,6 +1,9 @@
 import Link from "next/link"
-
+import Script from "next/script"
 export default function Footer() {
+    <Script  type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/26752595.js">
+ 
+    </Script>
   return (
     <div className="footer">
         <div className="footer__container">

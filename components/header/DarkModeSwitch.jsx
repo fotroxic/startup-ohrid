@@ -24,8 +24,12 @@ import {
 } from '@chakra-ui/icons';
 import SecondHeader from './SecondHeader';
 import RLink from 'next/link'
+import Script from 'next/script';
 
 export default function WithSubnavigation() {
+  <Script  type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/26752595.js">
+ 
+  </Script>
   const { isOpen, onToggle } = useDisclosure();
 
   return (
