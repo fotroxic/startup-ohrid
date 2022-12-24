@@ -13,7 +13,11 @@ export default function ContactPage() {
 
   return (
     <>
+    <div className='contact__form'>
+    <div className='contact__form__container'>
 <div id="hubspot-form-wrapper" />
+</div>
+</div>
     </>
   )
 }
