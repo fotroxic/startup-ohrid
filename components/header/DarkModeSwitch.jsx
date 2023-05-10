@@ -260,21 +260,15 @@ const MobileNavItem = ({ label, children, href }, NavItem) => {
 
 const NAV_ITEMS = [
   {
-    label: 'News',
-    href: '/news',
-    children: [
-      {
-        label: 'Explore News',
-        subLabel: 'Trending Design to inspire you',
-        href: '/news',
-      },
-      {
-        label: 'Global News',
-        subLabel: 'Up-and-coming Designers',
-        href: '/news',
-      },
-    ],
+    label: 'About Us',
+    href: '/about',
   },
+
+  {
+    label: 'Community',
+    href: '/community',
+  },
+
   {
     label: 'Jobs',
     href: '/jobs',
@@ -291,12 +285,26 @@ const NAV_ITEMS = [
       },
     ],
   },
+
   {
-    label: 'Community',
-    href: '/community',
+    label: 'News',
+    href: '/news',
+    children: [
+      {
+        label: 'Explore News',
+        subLabel: 'Trending Design to inspire you',
+        href: '/news',
+      },
+      {
+        label: 'Global News',
+        subLabel: 'Up-and-coming Designers',
+        href: '/news',
+      },
+    ],
   },
   {
-    label: 'Blogs',
-    href: '/blog',
+    label: 'Contact',
+    href: '/contact',
   },
+
 ];

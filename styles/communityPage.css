@@ -94,3 +94,48 @@
     text-align: center;
     
 }
+@media screen and (max-width: 1200px) {
+.community__page__container {
+width: 90%;
+}
+}
+
+@media screen and (max-width: 768px) {
+.hero__left h1 {
+font-size: 40px;
+text-align: center;
+}
+
+.hero__left p {
+font-size: 18px;
+width: 100%;
+}
+
+.comunity__content
+{
+    justify-content: center;
+}
+
+.community__items__container {
+width: 90%;
+align-self: center;
+}
+
+.community__items {
+width: 45%;
+height: 200px !important;
+margin-right: 0px !important;
+}
+
+.community__hero {
+flex-direction: column;
+}
+
+.hero__left {
+margin-top: 50px;
+}
+
+.hero__right img {
+display: none;
+}
+}

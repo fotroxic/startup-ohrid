@@ -1,67 +1,58 @@
-.first__header
-{
-
-    width: 100%;
+.first__header {
+    position: fixed;
     top: 0;
-    position: fixed;
-    z-index: 100;
-}
-
-.second__header
-{
-    
-    position: fixed;
+    left: 0;
     width: 100%;
+    z-index: 100;
+  }
+  
+  .second__header {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: center;
-    top: 60px;
-    height: 80px;
+    align-items: center;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(40px);
-
-
-}
-
-.s__header__container
-{
-    width: 1200px;
+    z-index: 99;
+  }
+  
+  .s__header__container {
+    width: 95%;
+    max-width: 1200px;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
-    
-}
-
-.header__links
-{
-    height: 100%;
+    justify-content: space-between;
     align-items: center;
+  }
+  
+  .header__links {
+    height: 100%;
     display: flex;
-    margin-right: 20px;
-
-}
-
-.header__links p{
+    align-items: center;
+  }
+  
+  .header__links p {
     margin-right: 20px;
     font-size: 18px;
     font-weight: 400;
-}
-
-
-.header__links p:hover
-{
+  }
+  
+  .header__links p:hover {
     cursor: pointer;
     text-decoration: underline;
-}
-
-
-.header__buttons{
+  }
+  
+  .header__buttons {
     height: 100%;
     display: flex;
     align-items: center;
-}
-
-.header__buttons button 
-{
+  }
+  
+  .header__buttons button {
     margin-right: 20px;
     border: 1px solid gray;
     width: 170px;
@@ -69,41 +60,65 @@
     font-size: 18px;
     font-weight: 450;
     transition: 500ms all;
-}
-
-
-.header__buttons button:hover
-{
+  }
+  
+  .header__buttons button:hover {
     background-color: black;
     color: #fff;
-}
-
-.right__sticky__buttons
-{
+  }
+  
+  .right__sticky__buttons {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     width: 336px;
     align-items: center;
-    flex-direction: column ;
-}
-
-.right__sticky__buttons button
-{
+    flex-direction: column;
+  }
+  
+  .right__sticky__buttons button {
     margin-right: 0;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-
-.menu__box
-{
+  }
+  
+  .menu__box {
     width: 100px;
     height: 100px;
     background-color: black;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 80px;
     cursor: pointer;
     margin-right: 30px;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .header__links,
+    .header__buttons,
+    .right__sticky__buttons 
+    {
+      flex-direction: column;
+      margin-top: 5px;
+      padding: 5px;
+      margin-left: 10px;
+    }
+
+    .header__buttons button{
+        margin-bottom: 5px;
+    }
+
+    .header__links p{
+        margin-bottom: 10px;
+    }
+    .logo {
+      margin-right: 0;
+    }
+    .s__header__container {
+      justify-content: space-between;
+    }
+    .menu__box {
+      display: block;
+    }
+  }
+  
