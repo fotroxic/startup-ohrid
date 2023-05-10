@@ -1,6 +1,13 @@
 .dropdown:hover .dropdown-menu {
     display: block;
+   
   }
+
+.chakra-collapse{
+  position: relative;
+  z-index: 1000 !important;
+ 
+}
   .header{
     width: 100%;
     margin-top: 20px;
