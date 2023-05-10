@@ -5,9 +5,20 @@
 
 .chakra-collapse{
   position: relative;
-  z-index: 1000 !important;
+  z-index: 500 !important;
  
 }
+
+.chakra-stack
+{
+  position: relative;
+  z-index: 1000;
+}
+
+.css-11b6alt{
+  margin-right: -20px;
+}
+
   .header{
     width: 100%;
     margin-top: 20px;
