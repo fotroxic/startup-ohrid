@@ -11,6 +11,7 @@
     width: 1200px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 
 }
@@ -40,7 +41,7 @@
     line-height: 1;
     letter-spacing: 2px;
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 
@@ -57,28 +58,36 @@
 .community__items__container
 {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 20px;
     justify-content: center;
-    width: 600px;
+    width: 70%;
+    flex-wrap: wrap;
+   
+    max-height: 500px;
+    
 }
 .comunity__content{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+   
+  
 }
 
 .community__items
 {
     width: 250px !important;
-    height: 250px !important;
-    padding: 20px;
-    margin-bottom: 20px !important;
+    height: 100px !important;
+    padding: 15px;
+    padding-top: 30px;
+    
     margin-right: 20px !important;
     background-position: center;
     background-size: cover;
-    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .community__items:hover

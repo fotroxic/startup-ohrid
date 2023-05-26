@@ -1,56 +1,226 @@
-.contact__form
+.contact{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact__container
 {
-    margin-top: 200px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.contact__header
+{
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/headerContact.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+
+.contact__header h1
+{
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    height: 300px;
+    line-height: 300px;
+}
+
+.contact__section__one
+{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 100px;
 }
 
-.contact__form__container
+.inner__sections img
 {
-    width: 1200px;
+    width: 200px !important;
+    height: 200px !important;
+    align-items: center;
+    text-align: center;
+}
+
+.inner__sections{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.inner__sections p{
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.contact__section__two
+{
     display: flex;
     justify-content: center;
+    width: 50%;
+    text-align: center;
+    align-self: center;
 }
 
-.contact__main
+.contact__left__section
 {
+    align-self: center;
+}
+
+.contact__section__two h3
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+
+}
+
+
+
+.contact__left__section form
+{
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    width: 100%;
+    align-items: center;
+    
 }
 
-.contact__main h2
+.form__main
 {
-    font-size: 50px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+    margin-bottom: 20px;
 }
 
-.contact__main p
+.contact__left__section form input
 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    letter-spacing: 1.5px;
-    margin-bottom: 50px;
-    width: 50%;
+    border-bottom: 1px solid gray;
+    margin-right: 15px;
 }
 
-.contact__main button 
+.text__area{
+    width: 400px;
+    height: 100px;
+}
+
+.contact__left__section p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.checkbox__main
 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 130px;
-    height: 50px;
-    border-radius: 30px;
-    background-color: #0015ae;
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 50px;
-
+    display: flex;
 }
+
+.submit__button
+{
+    width: 150px;
+    height: 60px;
+    background-color: aquamarine;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .contact__header h1 {
+        font-size: 50px;
+        line-height: 80px;
+        margin-top: 70px;
+      }
+    .contact__section__one {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .inner__sections{
+        margin-top: 15px;
+    }
+  
+    .inner__sections img {
+      width: 150px !important;
+      height: 150px !important;
+      align-self: center;
+    }
+  
+    .contact__section__two {
+      width: 100%;
+    }
+  
+    .contact__left__section form {
+      width: 100%;
+    }
+  
+    .text__area {
+      width: 70%;
+    }
+
+    .contact__left__section form input{
+        margin-top: 10px;
+    }
+    .checkbox__main{
+        width: 100%;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        padding-left: 70px;
+        padding-right: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .contact__header h1 {
+      font-size: 50px;
+      line-height: 80px;
+      margin-top: 70px;
+    }
+  
+    .contact__section__one {
+      margin-top: 50px;
+    }
+  
+    .inner__sections{
+        margin-top: 15px;
+    }
+    .inner__sections img {
+      width: 100px !important;
+      align-self: center;
+      height: 100px !important;
+    }
+    .contact__left__section form input{
+        margin-top: 10px;
+    }
+
+    .text__area 
+    {
+        width: 70%;
+    }
+
+    .contact__left__section form p {
+        width: 70%;
+    }
+
+    .checkbox__main{
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 20px;
+        
+    }
+  }
+  

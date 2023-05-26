@@ -7,6 +7,7 @@
   .center-container{
     display: flex;
     width: 1500px;
+    justify-content: center;
   }
   .left-container{
     width: 70%;
@@ -14,6 +15,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    height: 1000px;
   }
  
   .left-block{
@@ -23,7 +25,7 @@
     height: 200px;
     flex-direction: column;
     margin: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 400px;
     padding-left: 30px;
     padding-right: 40px;
     padding-top: 10px;
@@ -86,15 +88,15 @@
   }
   
 .right-container{
-  margin-top: 150px;
-    width: 40%;
+ 
+    width: 30%;
     display: flex;
     flex-direction: column;
 }
 .right-block{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     margin: 10px;
     padding: 10px;
     margin-bottom: 20px;
@@ -108,7 +110,7 @@
     font-size: 1.1rem;
 }
 .most-read{
-  width: 70%;
+  width: 100%;
   background-color: #b0daf1;
   padding: 10px;
 }

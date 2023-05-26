@@ -6,7 +6,7 @@ import posts from '../../database/db.json'
 
 const App = () => {
   const [data, setData] = useState([]);
-  const [load, setLoad] = useState(4);
+  const [load, setLoad] = useState(6);
   const [flag,setFlag]=useState(true)
 
   const loadData = () => {
@@ -44,9 +44,11 @@ const App = () => {
          {
              <button className="load" onClick={loadData}>Load more</button>
            }
+
+
         </div>
-          <RightSticky/>
-          
+        
+        <RightSticky/>
 
       </div>
     </div>

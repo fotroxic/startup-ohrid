@@ -108,6 +108,14 @@
   .team__member p {
     align-self: center;
   }
+
+  .about__icons 
+  {
+    width: 20px !important;
+    height: 20px !important;
+    align-self: center;
+  }
+  
   
   /* Responsive Adjustments */
   @media only screen and (max-width: 1200px) {
@@ -174,6 +182,12 @@
       .team__member p{
         font-size: 18px;
         margin-top: 20px;
+      }
+
+      .about__icons 
+      {
+        width: 20px !important;
+        height: 20px !important;
       }
       
     }
