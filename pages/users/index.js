@@ -14,7 +14,7 @@ export default function Home({ users }) {
     <p className={styles['subtitle']}>All users</p>
     <ul className={styles['blog-list']}>
       {users.map(user => (
-        <li key={blog.slug}>
+        <li key={user.slug}>
           <Link href={`/users/${user.slug}`}>
             <a>{user.title}</a>
           </Link>
@@ -29,7 +29,7 @@ export async function getStaticProps() {
   const filesInBlogs = fs.readdirSync('./content/users')
 
   // Get the front matter and slug (the filename without .md) of all files
-  const blogs = filesInBlogs.map(filename => {
+  const users = filesInBlogs.map(filename => {
     const file = fs.readFileSync(`./content/users/${filename}`, 'utf8')
     const matterData = matter(file)
 
