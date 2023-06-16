@@ -19,7 +19,7 @@ export default function BecomeMember() {
 </div>
             </div>
             <div className="become__member__right">
-                <Link href="#"><button>Join Us!</button></Link>
+                <Link href="/register"><button>Join Us!</button></Link>
             </div>
         </div>
     </div>
