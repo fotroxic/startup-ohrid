@@ -3,12 +3,13 @@ import Item from "./Item";
 import Link from "next/link";
 import RightSticky from "../latestcenter/RightSticky";
 import posts from '../../database/db.json'
+import { Dropdown } from "@nextui-org/react";
 
 const App = () => {
   const [data, setData] = useState([]);
   const [load, setLoad] = useState(6);
   const [flag, setFlag] = useState(true);
-  const [selCat, setSelCat] = useState("");
+  const [selCat, setSelCat] = useState("Company");
 
   const loadData = () => {
     setLoad((prev) => prev + 4);
@@ -16,7 +17,9 @@ const App = () => {
 
   const changeCategoryHandler = () =>
   {
-        setSelCat("company")
+      
+        setSelCat("student")
+        console.log(selCat)
   }
 
   return (
@@ -31,8 +34,9 @@ const App = () => {
               institutions, and individuals. Together we encourage and develop
               the IT sector of Split and the surrounding region.
             </p>
-            <button>Change</button>
+
           </div>
+          
           <div className="hero__right">
             <img
               className="logo"
@@ -41,10 +45,12 @@ const App = () => {
             />
           </div>
         </div>
+       <button onClick={changeCategoryHandler}>Change</button>
+
         <div className="comunity__content">
           <div className="community__items__container">
             {posts.jobs.slice(0, load).map((job, index) => {
-              if (job.category === "company") {
+              if (job.category == selCat) {
                 return (
                   <div key={index}>
                     <Link href={`/news/}`}>
@@ -66,7 +72,7 @@ const App = () => {
                     </Link>
                   </div>
                 );
-              } else if (job.category === "student") {
+              } else if (job.category == job.student) {
                 return (
                   <div key={index}>
                     <Link href={`/news/}`}>

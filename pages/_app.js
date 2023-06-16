@@ -28,6 +28,7 @@ import '../styles/becomeMember.css'
 import '../styles/contact.css'
 import '../styles/blogSlug.css'
 import '../styles/about.css'
+import '../styles/dashboard.css'
 import { HubspotProvider } from 'next-hubspot';
 
 
