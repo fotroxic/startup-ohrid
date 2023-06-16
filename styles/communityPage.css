@@ -27,6 +27,8 @@
 
 }
 
+
+
 .hero__left h1
 {
     font-size: 50px;
@@ -46,12 +48,13 @@
 
 
 
-.hero__right img
+.hero__right .logo
 {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     margin-top: 20px;
     width: 300px;
+    height: 300px;
 }
 
 
@@ -84,10 +87,20 @@
     margin-right: 20px !important;
     background-position: center;
     background-size: cover;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
     border-bottom-right-radius: 25px;
+}
+.community__logo__container
+{
+    display: flex;
+}
+.community__logo
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .community__items:hover
@@ -99,7 +112,9 @@
 {
     background-size: cover !important;
     background-position: center !important; 
-    font-size: 30px;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: -10px;
     text-align: center;
     
 }

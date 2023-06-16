@@ -2,7 +2,7 @@ import React from "react";
 import Latest from "../../components/newsLatestNews/Latest";
 import NewsHero from "../../components/latestcenter/NewsHero"
 import { useState } from "react";
-import RightSticky from "../../components/latestcenter/RightSticky";
+import RightStickyNews from "../../components/latestcenter/RightStickyNews";
 import posts from '../../database/db.json'
 
 
@@ -59,7 +59,7 @@ const News =()=> {
                 Load More
             </button>
                 </div>
-                <RightSticky/>
+                <RightStickyNews/>
             </div>
         </div>
         </div>

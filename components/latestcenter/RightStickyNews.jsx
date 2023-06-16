@@ -39,19 +39,19 @@ export default function RightSticky() {
     <div className="most-read">
         <h4>MOST READ</h4>
         <div className="most-block">
-            <h5> Company </h5>
+            <h5> General </h5>
             <p> Split Tech City eBook: summing up the growth of our tech community! </p>
         </div>
         <div className="most-block">
-            <h5> Startups </h5>
+            <h5> Technology </h5>
             <p> Split Tech City podcast: ten stories about choosing to live in Croatia! </p>
         </div>
         <div className="most-block">
-            <h5> Individual </h5>
+            <h5> Startups  </h5>
             <p> MetaBelly: Split’s startup that follows the gut feeling! </p>
         </div>
         <div className="most-block">
-            <h5> Digital Nomads </h5>
+            <h5> Worldwide </h5>
             <p> The eventful second quarter of 2022! </p>
         </div>
         <div className="most-block">

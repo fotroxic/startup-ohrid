@@ -13,6 +13,8 @@
 {
   position: relative;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
 }
 
 .css-11b6alt{
@@ -74,12 +76,20 @@
     border-bottom: 0.3em solid;
     border-top: 0;
   }
+
+  
+
 }
 @media screen and (max-width: 991px) {
 
     .support-button{
         display: none;
     }
+    .chakra-stack
+  {
+    width: 30% !important;
+  }
+
     
   .dropdown-toggle.show::after {
     border-top: 0;
