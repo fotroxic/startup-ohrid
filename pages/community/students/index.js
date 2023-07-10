@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import Item from "./Item";
+import Item from '../../../components/community/Item'
 import Link from "next/link";
-import RightSticky from "../latestcenter/RightSticky";
-import posts from '../../database/db.json'
+import RightSticky from "../../../components/latestcenter/RightSticky";
+import posts from '../../../database/db.json'
 import { Dropdown } from "@nextui-org/react";
 
 const App = () => {
   const [data, setData] = useState([]);
   const [load, setLoad] = useState(6);
   const [flag, setFlag] = useState(true);
-  const [selCat, setSelCat] = useState("Company");
+  const [selCat, setSelCat] = useState("student");
 
   const loadData = () => {
     setLoad((prev) => prev + 4);
@@ -45,7 +45,7 @@ const App = () => {
             />
           </div>
         </div>
-       <Link href={"/community/students"}><p>Go to students</p></Link>
+       <Link href={"/community"}><p>Go to companies</p></Link>
 
         <div className="comunity__content">
           <div className="community__items__container">
