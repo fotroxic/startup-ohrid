@@ -81,26 +81,31 @@
 {
     width: 250px !important;
     height: 100px !important;
-    padding: 15px;
-    padding-top: 30px;
-    
+    padding: 20px;
     margin-right: 20px !important;
-    background-position: center;
-    background-size: cover;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 25px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden; /* Hide overflowing content */
 }
 .community__logo__container
 {
     display: flex;
+    align-items: center; /* Center items vertically */
 }
 .community__logo
 {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 50px; /* Adjust the width and height to your preference */
+    height: 50px;
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 10px; /* Add some space between image and text */
+}
+
+.community__info__container
+{
+    text-align: center;
+
 }
 
 .community__items:hover
@@ -110,14 +115,51 @@
 
 .community__items h3
 {
-    background-size: cover !important;
-    background-position: center !important; 
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 15px;
-    margin-top: -10px;
     text-align: center;
+    margin-bottom: 5px; /* Add some space between company name and category */
     
 }
+
+/* styles.css */
+.dropdown {
+
+        position: relative;
+        align-self: baseline;
+  }
+  
+  .dropdown-btn {
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+
+  
 @media screen and (max-width: 1200px) {
 .community__page__container {
 width: 90%;

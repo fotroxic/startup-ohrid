@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Item from "./Item";
+import Item from '../../../components/community/Item'
 import Link from "next/link";
-import RightSticky from "../latestcenter/RightSticky";
-import posts from '../../database/db.json'
+import RightSticky from "../../../components/latestcenter/RightSticky";
+import posts from '../../../database/db.json'
 
 
 const App = () => {

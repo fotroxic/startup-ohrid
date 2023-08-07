@@ -84,7 +84,7 @@ export default function WithSubnavigation() {
           </Button>
           <Link href='/register'>  
           <Button
-            display={{ base: 'none', md: 'inline-flex' }}
+            display={{ base: 'flex', md: 'inline-flex' }}
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
