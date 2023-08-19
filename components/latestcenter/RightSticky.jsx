@@ -37,27 +37,42 @@ export default function RightSticky() {
     </div>
 
     <div className="most-read">
-        <h4>MOST READ</h4>
-        <div className="most-block">
+        <h4>Explore</h4>
+       <Link href={"/community/companies"}>
+       <div className="most-block">
             <h5> Company </h5>
-            <p> Split Tech City eBook: summing up the growth of our tech community! </p>
-        </div>
-        <div className="most-block">
+            <p> Expore More </p>
+        </div></Link>
+       <Link href={"/community/startup"}>
+       <div className="most-block">
             <h5> Startups </h5>
-            <p> Split Tech City podcast: ten stories about choosing to live in Croatia! </p>
-        </div>
-        <div className="most-block">
+            <p> Expore More </p>
+        </div></Link>
+       <Link href={"/community/individual"}>
+       <div className="most-block">
             <h5> Individual </h5>
-            <p> MetaBelly: Split’s startup that follows the gut feeling! </p>
-        </div>
-        <div className="most-block">
+            <p> Expore More </p>
+        </div></Link>
+       <Link href={"/community/digital-nomad"}>
+       <div className="most-block">
             <h5> Digital Nomads </h5>
-            <p> The eventful second quarter of 2022! </p>
-        </div>
-        <div className="most-block">
-            <h5> Startups </h5>
-            <p> STup! was a combination of youth, innovation, learning, and lots of fun! </p>
-        </div>
+            <p> Expore More </p>
+        </div></Link>
+       <Link href={"/community/coworking-spaces"}>
+       <div className="most-block">
+            <h5> Coworking Spaces </h5>
+            <p> Expore More </p>
+        </div></Link>
+       <Link href={"/community/institutions"}>
+       <div className="most-block">
+            <h5> Institutions </h5>
+            <p> Expore More </p>
+        </div></Link>
+       <Link href={"/community/organizations"}>
+       <div className="most-block">
+            <h5> Organizations </h5>
+            <p> Expore More </p>
+        </div></Link>
     </div>
     <div className='membership'>
     <div className="header__buttons right__sticky__buttons">

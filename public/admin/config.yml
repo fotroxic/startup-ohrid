@@ -39,3 +39,4 @@ collections:
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Category", name: "category", options: ["Company","Startup","Individual","Digital Nomads","Coworking Spaces","Institution"," Organization"] default: "individual"}

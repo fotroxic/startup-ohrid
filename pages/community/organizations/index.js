@@ -51,7 +51,12 @@ const App = () => {
         <div className="dropdown-content">
          <a><Link href={"/community/"}><p>All</p></Link></a>
          <a><Link href={"/community/companies"}><p>Companies</p></Link></a>
-         <a><Link href={"/community/students"}><p>Students</p></Link></a>
+         <a><Link href={"/community/startup"}><p>Startups</p></Link></a>
+         <a><Link href={"/community/individual"}><p>Individuals</p></Link></a>
+         <a><Link href={"/community/digital-nomad"}><p>Digital Nomads</p></Link></a>
+         <a><Link href={"/community/coworking-spaces"}><p>Coworking Spaces</p></Link></a>
+         <a><Link href={"/community/institutions"}><p>institutions</p></Link></a>
+         <a><Link href={"/community/organizations"}><p>Organizations</p></Link></a>
         </div>
       )}
     </div>

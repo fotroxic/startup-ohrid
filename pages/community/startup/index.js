@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
-import Item from "../../components/community/Item";
+import Item from '../../../components/community/Item'
 import Link from "next/link";
-import RightSticky from "../../components/latestcenter/RightSticky"
-import posts from '../../database/db.json'
-import fs from 'fs'
-import matter from 'gray-matter'
+import RightSticky from "../../../components/latestcenter/RightSticky";
+import posts from '../../../database/db.json'
 
 
-const App = ({users}) => {
+const App = () => {
 
   const [load, setLoad] = useState(6);
   const [isOpen, setIsOpen] = useState(false);
- 
+  const [selCat, setSelCat] = useState("Company");
 
   const loadData = () => {
     setLoad((prev) => prev + 4);
@@ -51,7 +49,7 @@ const App = ({users}) => {
       </button>
       {isOpen && (
         <div className="dropdown-content">
-        <a><Link href={"/community/"}><p>All</p></Link></a>
+       <a><Link href={"/community/"}><p>All</p></Link></a>
          <a><Link href={"/community/companies"}><p>Companies</p></Link></a>
          <a><Link href={"/community/startup"}><p>Startups</p></Link></a>
          <a><Link href={"/community/individual"}><p>Individuals</p></Link></a>
@@ -62,36 +60,35 @@ const App = ({users}) => {
         </div>
       )}
     </div>
- 
 
         <div className="comunity__content">
           <div className="community__items__container">
-            {users.map(user=> {
-             
+            {posts.jobs.slice(0, load).map((job, index) => {
+              if (job.category == selCat) {
                 return (
-                  <div key={user.slug}>
-                    <Link  href={`/users/${user.slug}`}>
+                  <div key={index}>
+                    <Link href={`/news/}`}>
                       <Item
                         className="community__items"
-                        key={user.slug}
+                        key={job.id}
                         style={{ backgroundColor: "rgb(238,238,238)" }}
                       >
                         <div className="community__logo__container">
                           <img
                             className="community__logo"
-                            key={user.slug}
-                            src={user.logo}
+                            key={job.id}
+                            src={job.memberImg}
                           />
                         <div className="community__info__container">
-                        <h3 key={user.slug}>{user.title}</h3>
-                          {/* <p key={job.id}>{job.category}</p> */}
+                        <h3 key={job.id}>{job.name}</h3>
+                          <p key={job.id}>{job.category}</p>
                         </div>
                         </div>
                       </Item>
                     </Link>
                   </div>
                 );
-              
+              } 
             })}
        
        
@@ -110,28 +107,5 @@ const App = ({users}) => {
 
   );
 };
-
-export async function getStaticProps() {
-  // List of files in blgos folder
-  const filesInBlogs = fs.readdirSync('./content/users')
-
-  // Get the front matter and slug (the filename without .md) of all files
-  const users = filesInBlogs.map(filename => {
-    const file = fs.readFileSync(`./content/users/${filename}`, 'utf8')
-    const matterData = matter(file)
-
-    return {
-      ...matterData.data, // matterData.data contains front matter
-      slug: filename.slice(0, filename.indexOf('.'))
-    }
-  })
-
-  return {
-    props: {
-      users
-    }
-  }
-
-}
 
 export default App;
