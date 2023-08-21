@@ -3,13 +3,17 @@ import Item from '../../../components/community/Item'
 import Link from "next/link";
 import RightSticky from "../../../components/latestcenter/RightSticky";
 import posts from '../../../database/db.json'
+import fs from 'fs'
+import matter from 'gray-matter'
 
 
-const App = () => {
+
+
+const App = ({users}) => {
 
   const [load, setLoad] = useState(6);
   const [isOpen, setIsOpen] = useState(false);
-  const [selCat, setSelCat] = useState("Company");
+ 
 
   const loadData = () => {
     setLoad((prev) => prev + 4);
@@ -60,35 +64,36 @@ const App = () => {
         </div>
       )}
     </div>
+ 
 
         <div className="comunity__content">
           <div className="community__items__container">
-            {posts.jobs.slice(0, load).map((job, index) => {
-              if (job.category == selCat) {
+            {users.map(user=> {
+             
                 return (
-                  <div key={index}>
-                    <Link href={`/news/}`}>
+                  <div key={user.slug}>
+                    <Link  href={`/community/${user.category}/${user.slug}`}>
                       <Item
                         className="community__items"
-                        key={job.id}
+                        key={user.slug}
                         style={{ backgroundColor: "rgb(238,238,238)" }}
                       >
                         <div className="community__logo__container">
                           <img
                             className="community__logo"
-                            key={job.id}
-                            src={job.memberImg}
+                            key={user.slug}
+                            src={user.logo}
                           />
                         <div className="community__info__container">
-                        <h3 key={job.id}>{job.name}</h3>
-                          <p key={job.id}>{job.category}</p>
+                        <h3 key={user.slug}>{user.title}</h3>
+                          <p key={user.slug}>{user.category}</p>
                         </div>
                         </div>
                       </Item>
                     </Link>
                   </div>
                 );
-              } 
+              
             })}
        
        
@@ -107,5 +112,28 @@ const App = () => {
 
   );
 };
+
+export async function getStaticProps() {
+  // List of files in blgos folder
+  const filesInBlogs = fs.readdirSync('./content/users')
+
+  // Get the front matter and slug (the filename without .md) of all files
+  const users = filesInBlogs.map(filename => {
+    const file = fs.readFileSync(`./content/users/${filename}`, 'utf8')
+    const matterData = matter(file)
+
+    return {
+      ...matterData.data, // matterData.data contains front matter
+      slug: filename.slice(0, filename.indexOf('.'))
+    }
+  })
+
+  return {
+    props: {
+      users
+    }
+  }
+
+}
 
 export default App;

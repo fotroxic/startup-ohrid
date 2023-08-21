@@ -1,7 +1,7 @@
 ---
 logo: https://www.google.com/url?sa=i&url=https%3A%2F%2Fca.linkedin.com%2Fin%2Fjason-smit-58037031&psig=AOvVaw3U62UKqJD0x9-UoeqYIehk&ust=1692564835234000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCImb_N6YADFQAAAAAdAAAAABAL
 title: Company name
-category: Startup
+category: startup
 layout: users
 thumbnail: https://www.google.com/url?sa=i&url=https%3A%2F%2Fca.linkedin.com%2Fin%2Fjason-smit-58037031&psig=AOvVaw3U62UKqJD0x9-UoeqYIehk&ust=1692564835234000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCImb_N6YADFQAAAAAdAAAAABAL
 description: https://www.google.com/url?sa=i&url=https%3A%2F%2Fca.linkedin.com%2Fin%2Fjason-smit-58037031&psig=AOvVaw3U62UKqJD0x9-UoeqYIehk&ust=1692564835234000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCImb_N6YADFQAAAAAdAAAAABALhttps://www.google.com/url?sa=i&url=https%3A%2F%2Fca.linkedin.com%2Fin%2Fjason-smit-58037031&psig=AOvVaw3U62UKqJD0x9-UoeqYIehk&ust=1692564835234000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCImb_N6YADFQAAAAAdAAAAABALhttps://www.google.com/url?sa=i&url=https%3A%2F%2Fca.linkedin.com%2Fin%2Fjason-smit-58037031&psig=AOvVaw3U62UKqJD0x9-UoeqYIehk&ust=1692564835234000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCImb_N6YADFQAAAAAdAAAAABALhttps://www.google.com/url?sa=i&url=https%3A%2F%2Fca.linkedin.com%2Fin%2Fjason-smit-58037031&psig=AOvVaw3U62UKqJD0x9-UoeqYIehk&ust=1692564835234000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCImb_N6YADFQAAAAAdAAAAABAL

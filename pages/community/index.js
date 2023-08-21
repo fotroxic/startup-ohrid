@@ -70,7 +70,7 @@ const App = ({users}) => {
              
                 return (
                   <div key={user.slug}>
-                    <Link  href={`/users/${user.slug}`}>
+                    <Link  href={`/community/${user.category}/${user.slug}`}>
                       <Item
                         className="community__items"
                         key={user.slug}
@@ -84,7 +84,7 @@ const App = ({users}) => {
                           />
                         <div className="community__info__container">
                         <h3 key={user.slug}>{user.title}</h3>
-                          {/* <p key={job.id}>{job.category}</p> */}
+                          <p key={user.slug}>{user.category}</p>
                         </div>
                         </div>
                       </Item>
