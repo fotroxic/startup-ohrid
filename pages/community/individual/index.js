@@ -69,7 +69,7 @@ const App = ({users}) => {
         <div className="comunity__content">
           <div className="community__items__container">
             {users.map(user=> {
-             
+             if(user.category=="individual"){
                 return (
                   <div key={user.slug}>
                     <Link  href={`/community/${user.category}/${user.slug}`}>
@@ -93,6 +93,7 @@ const App = ({users}) => {
                     </Link>
                   </div>
                 );
+            }
               
             })}
        

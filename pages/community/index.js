@@ -65,6 +65,7 @@ const App = ({users}) => {
  
 
         <div className="comunity__content">
+          <div className="load__button__container">
           <div className="community__items__container">
             {users.map(user=> {
              
@@ -95,16 +96,17 @@ const App = ({users}) => {
             })}
        
        
-         {
-             <button className="load" onClick={loadData}>Load more</button>
-           }
-
 
         </div>
         
+        {
+             <button className="load" onClick={loadData}>Load more</button>
+           }
+ </div>
         <RightSticky/>
 
       </div>
+     
     </div>
 </div>
 
