@@ -37,9 +37,9 @@ const News =()=> {
         <div className="dropdown-content">
         <a><Link href={"/news/"}><p>All</p></Link></a>
          <a><Link href={"/news/general"}><p>General</p></Link></a>
-         <a><Link href={"/news/entrepreneurship"}><p>Startups</p></Link></a>
-         <a><Link href={"/news/technology"}><p>Individuals</p></Link></a>
-         <a><Link href={"/news/design"}><p>Coworking Spaces</p></Link></a>
+         <a><Link href={"/news/entrepreneurship"}><p>Entrepreneurship</p></Link></a>
+         <a><Link href={"/news/technology"}><p>Technology</p></Link></a>
+         <a><Link href={"/news/design"}><p>Design</p></Link></a>
          <a><Link href={"/news/digital-nomads"}><p>Digital Nomads</p></Link></a>
        
         </div>

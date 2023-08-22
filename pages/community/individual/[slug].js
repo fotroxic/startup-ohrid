@@ -15,6 +15,10 @@ export default function Blog({ frontmatter, markdown}) {
       <div className='post__slug__container'>
       <img className='user__logo' src={frontmatter.logo}></img>
       <h1 className='post__title'>{frontmatter.title}</h1>
+      <div className='user__category__set'>
+      <p className='user__category'>{frontmatter.category}</p>
+      <p className='user__category'>{frontmatter.title}</p>
+      </div>
       <img className='post__img' src={frontmatter.thumbnail}></img>
       <ReactMarkdown className='post__text'>
         {markdown}
