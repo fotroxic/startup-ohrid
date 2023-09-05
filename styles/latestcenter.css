@@ -58,8 +58,16 @@
     margin-top: 15px;
     font-size: 1.1rem;
     margin-left: 10px;
+
   }
- 
+
+.line-clamp
+{
+  display: block;
+  overflow: hidden;
+  max-height: 2.6em;
+  line-height: 1.3em;
+}
   .left-img img{
     width: 200px;
     height: 105px;

@@ -5,9 +5,11 @@ import { useState } from "react";
 import RightStickyNews from "../../components/latestcenter/RightStickyNews";
 import posts from '../../database/db.json'
 import Link from "next/link";
+import fs from 'fs'
+import matter from 'gray-matter'
 
 
-const News =()=> {
+const News =({news})=> {
 
  
   const [load, setLoad] = useState(3);
@@ -46,35 +48,36 @@ const News =()=> {
       )}
     </div>
             <div className="left-container">
-            {posts.news.slice(0,load).map((news,index)=>{
-
+            {news.map(usernew=> {
           return(
-              <div className="left-block" key={index} >
+         <Link href={`/news/${usernew.category}/${usernew.slug}`}>
+              <div className="left-block" key={usernew.slug} >
                   <div className="left-img">
-                      <img src={news.img} alt="" />
+                      <img src={usernew.thumbnail} alt="" />
                   </div>
                   <div className='left-category'>
-                      {news.category}
+                      {usernew.category}
                   </div>
                   <div className='left-title'>
-                  {news.title}
+                  {usernew.title}
                   </div>
-                  <div className='left-desc'>
-                  {news.description}
+                  <div className='left-desc line-clamp'>
+                  {usernew.secondtext}
                   </div>
                   <div className='left-span-below'> 
                       
                       <div>
-                          <img  src={news.spanImg} alt="" /> 
+                          <img  src={usernew.userlogo} alt="" /> 
                       
                       </div>
                       <div>
-                          <span>{news.spanDesc} </span>
+                          <span>{usernew.username} </span>
                       </div>
                   </div>
-              </div>        
-              )   
-              })}          
+              </div>  
+         </Link>      
+              );
+              })}
         
         <button 
                 className='load' 
@@ -90,6 +93,29 @@ const News =()=> {
       )
     }
     
+
+export async function getStaticProps() {
+  // List of files in blgos folder
+  const filesInBlogs = fs.readdirSync('./content/news')
+
+  // Get the front matter and slug (the filename without .md) of all files
+  const news = filesInBlogs.map(filename => {
+    const file = fs.readFileSync(`./content/news/${filename}`, 'utf8')
+    const matterData = matter(file)
+
+    return {
+      ...matterData.data, // matterData.data contains front matter
+      slug: filename.slice(0, filename.indexOf('.'))
+    }
+  })
+
+  return {
+    props: {
+      news
+    }
+  }
+
+}
 
 export default News
 
