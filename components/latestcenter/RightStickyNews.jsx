@@ -38,26 +38,36 @@ export default function RightSticky() {
 
     <div className="most-read">
         <h4>READ MORE</h4>
+        <Link href={"/news/general"}>
         <div className="most-block">
-            <h5> General </h5>
+           <h5> General </h5>
             <p> READ MORE </p>
         </div>
-        <div className="most-block">
+        </Link>
+      <Link href={"/news/technology"}>
+      <div className="most-block">
             <h5> Technology </h5>
             <p> READ MORE </p>
         </div>
-        <div className="most-block">
+      </Link>
+     <Link href={"/news/entrepreneurship"}>
+     <div className="most-block">
             <h5> Entrepreneurship  </h5>
             <p> READ MORE </p>
         </div>
-        <div className="most-block">
+     </Link>
+     <Link href={"/news/design"}>
+     <div className="most-block">
             <h5> Design </h5>
             <p>  READ MORE </p>
         </div>
-        <div className="most-block">
+     </Link>
+      <Link href={"/news/digital-nomads"}>
+      <div className="most-block">
             <h5> Digital Nomads </h5>
             <p> READ MORE </p>
         </div>
+      </Link>
     </div>
     <div className='membership'>
     <div className="header__buttons right__sticky__buttons">
