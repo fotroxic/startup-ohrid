@@ -36,9 +36,9 @@ export default function HeroBanner() {
                     </Link>
                    </li>
                    <li>
-                   <Link href='/jobs'>
+                   {/* <Link href='/jobs'>
                         <button>Jobs</button>
-                    </Link>
+                    </Link> */}
                    </li>
                 </ul>
             </div>

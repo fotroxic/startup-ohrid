@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Item from '../../../components/community/Item'
 import Link from "next/link";
-import RightSticky from "../../../components/latestcenter/RightSticky";
+import RightStickyNews from "../../../components/latestcenter/RightStickyNews";
 import posts from '../../../database/db.json'
 import fs from 'fs'
 import matter from 'gray-matter'
@@ -105,7 +105,7 @@ const App = ({users}) => {
 
         </div>
         
-        <RightSticky/>
+        <RightStickyNews/>
 
       </div>
     </div>

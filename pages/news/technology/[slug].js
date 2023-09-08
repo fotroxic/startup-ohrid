@@ -30,6 +30,13 @@ export default function Blog({ frontmatter, markdown}) {
         {frontmatter.secondtext}
       </ReactMarkdown>
 
+      <div className='social__medias'>
+        <Link href={"/"}>FB</Link>
+        <Link href={"/"}>LI</Link>
+        <Link href={"/"}>TW</Link>
+
+      </div>
+
       <div className='about__author'>
         <div className='author__image'>
         <img className='user__logo' src={frontmatter.userlogo}></img>

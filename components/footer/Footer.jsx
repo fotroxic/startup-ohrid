@@ -27,7 +27,7 @@ export default function Footer() {
             <ul className="footer__menu">
                 <h4>Other</h4>
                 <Link href='/events'><li>Events</li></Link>
-                <Link href='/jobs'><li>Jobs</li></Link>
+                {/* <Link href='/jobs'><li>Jobs</li></Link> */}
                 <Link href='/about'><li>About Us</li></Link>
                 <Link href='/support-our-community'><li>Support our Community!</li></Link>
                 <Link href='/contact'><li>Contact</li></Link>

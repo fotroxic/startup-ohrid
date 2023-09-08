@@ -273,22 +273,22 @@ const NAV_ITEMS = [
     href: '/community',
   },
 
-  {
-    label: 'Jobs',
-    href: '/jobs',
-    children: [
-      {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '/jobs',
-      },
-      {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '/jobs',
-      },
-    ],
-  },
+  // {
+  //   label: 'Jobs',
+  //   href: '/jobs',
+  //   children: [
+  //     {
+  //       label: 'Job Board',
+  //       subLabel: 'Find your dream design job',
+  //       href: '/jobs',
+  //     },
+  //     {
+  //       label: 'Freelance Projects',
+  //       subLabel: 'An exclusive list for contract work',
+  //       href: '/jobs',
+  //     },
+  //   ],
+  // },
 
   {
     label: 'News',

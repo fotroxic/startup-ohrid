@@ -31,6 +31,9 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Second image", name: "secondimage", widget: "image" }
       - { label: "Second Text", name: "secondtext", widget: "markdown" }
+      - { label: "Facebook", name: "Facebook", widget: "string" }
+      - { label: "LinkedIn", name: "LinkedIn", widget: "string" }
+      - { label: "Twitter", name: "Twitter", widget: "string" }
   - name: "users" # Used in routes, e.g., /admin/collections/blog
     label: "Users" # Used in the UI
     folder: "content/users" # The path to the folder where the documents are stored

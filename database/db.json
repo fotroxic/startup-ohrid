@@ -2,45 +2,33 @@
     "content":[
         {
             "id":1,
-            "link": "world-economy",
-            "title":"World Economy",
-            "contentImg": "https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            "link": "general",
+            "title":"General",
+            "contentImg": "https://images.inc.com/uploaded_files/image/1920x1080/getty_180152187_48132.jpg"
         },
         {
             "id":2,
-            "link": "inovation",
-            "title":"Inovation",
-            "contentImg": "https://images.unsplash.com/photo-1661710782009-c06cbf60cda7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            "link": "technology",
+            "title":"Technology",
+            "contentImg": "https://static.toiimg.com/thumb/msid-84374944,width-1280,height-720,resizemode-4/.jpg"
         },
         {
             "id":3,
-            "link": "big-news",
-            "title":"Big News",
-            "contentImg": "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            "link": "entrepreneurship",
+            "title":"Entrepreneurship",
+            "contentImg": "https://marvel-b1-cdn.bc0a.com/f00000000100045/www.elmhurst.edu/wp-content/uploads/2021/07/learn-entrepreneurship-illustration.jpg"
         },
         {
             "id":4,
-            "link": "technology",
-            "title":"Technology",
-            "contentImg": "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            "link": "design",
+            "title":"Design",
+            "contentImg": "https://img.freepik.com/free-vector/design-process-concept-landing-page_23-2148313670.jpg?w=2000"
         },
         {
             "id":5,
-            "link": "newsletter",
-            "title":"Newsletter",
-            "contentImg": "https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-        },
-        {
-            "id":6,
-            "link": "technology",
-            "title":"Technology",
-            "contentImg": "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-        },
-        {
-            "id":7,
-            "link": "technology",
-            "title":"Technology",
-            "contentImg": "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            "link": "digital-nomads",
+            "title":"Digital Nomads",
+            "contentImg": "https://talent2africa.com/wp-content/uploads/2022/07/nomade-digital-T2A.jpg"
         }
     ],
 
