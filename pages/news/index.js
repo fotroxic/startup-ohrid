@@ -50,7 +50,7 @@ const News =({news})=> {
             <div className="left-container">
             {news.map(usernew=> {
           return(
-         <Link href={`/news/${usernew.category}/${usernew.slug}`}>
+         <Link key={usernew.slug} href={`/news/${usernew.category}/${usernew.slug}`}>
               <div className="left-block" key={usernew.slug} >
                   <div className="left-img">
                       <img src={usernew.thumbnail} alt="" />
