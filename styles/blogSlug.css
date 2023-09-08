@@ -38,16 +38,16 @@
     margin-right: auto;
     text-align: center;
     width: 750px;
+    margin-bottom: 30px;
 }
 
 .user__logo
 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 100px;
+   align-self: center;
+    width: 40%;
     border-radius: 50%;
-    margin-bottom: 10px;
+
+   
 }
 
 .news__text__details
@@ -68,6 +68,25 @@
     border-top: 1px solid darkgray;
     margin-top: 100px;
   
+}
+
+.user__info__news
+{
+    display: flex;
+    width: 150px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user__news__username
+{
+    line-height: 50px;
+    font-size: 20px;
+    width: 60%;
+    color: blue;
+    font-weight: 600;
 }
 
 .author__image
@@ -107,4 +126,23 @@
     border: 1px solid black;
     border-radius: 50px;
     padding: 10px;
+}
+
+.social__medias
+{
+    align-self: center;
+    align-items: center;
+    display: flex;
+}
+
+.social__media__logos
+{
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+}
+
+.social__media__logos:hover
+{
+    cursor: pointer;
 }

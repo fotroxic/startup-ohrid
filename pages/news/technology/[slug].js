@@ -18,8 +18,10 @@ export default function Blog({ frontmatter, markdown}) {
     <h3 className='news__text__details'>{frontmatter.category}</h3>
     </Link>
       <h1 className='post__title'>{frontmatter.title}</h1>
+      <div className='user__info__news'>
       <img className='user__logo' src={frontmatter.userlogo}></img>
-      <h3 className='news__text__details'>{frontmatter.username}</h3>
+      <h3 className='user__news__username'>{frontmatter.username}</h3>
+      </div>
       <img className='post__img' src={frontmatter.thumbnail}></img>
       <ReactMarkdown className='post__text'>
         {markdown}
@@ -31,9 +33,9 @@ export default function Blog({ frontmatter, markdown}) {
       </ReactMarkdown>
 
       <div className='social__medias'>
-        <Link href={"/"}>FB</Link>
-        <Link href={"/"}>LI</Link>
-        <Link href={"/"}>TW</Link>
+        <Link href={`/${frontmatter.facebook}`}><img className='social__media__logos' src='https://cdn-icons-png.flaticon.com/512/124/124010.png'></img></Link>
+        <Link href={`/${frontmatter.linkedin}`}><img className='social__media__logos' src='https://pbs.twimg.com/profile_images/1661161645857710081/6WtDIesg_400x400.png'></img></Link>
+        <Link href={`/${frontmatter.twitter}`}><img className='social__media__logos' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/292px-Logo_of_Twitter.svg.png'></img></Link>
 
       </div>
 
