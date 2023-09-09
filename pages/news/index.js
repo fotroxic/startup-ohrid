@@ -30,8 +30,8 @@ const News =({news})=> {
         <Latest/>
      
         <div className='latest-center'>
-        <div className="center-container">
-               <div className="dropdown" >
+          <div className="toggle__button__container">
+        <div className="dropdown" >
       <button className="dropdown-btn" onClick={handleDropdownClick}>
         Toggle Dropdown
       </button>
@@ -47,6 +47,8 @@ const News =({news})=> {
         </div>
       )}
     </div>
+        <div className="center-container">
+
             <div className="left-container">
             {news.map(usernew=> {
           return(
@@ -87,6 +89,7 @@ const News =({news})=> {
             </button>
                 </div>
                 <RightStickyNews/>
+            </div>
             </div>
         </div>
         </div>

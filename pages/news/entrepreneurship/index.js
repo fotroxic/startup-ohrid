@@ -1,126 +1,110 @@
-import React, { useEffect, useState } from "react";
-import Item from '../../../components/community/Item'
-import Link from "next/link";
+import React from "react";
+import Latest from "../../../components/newsLatestNews/Latest";
+import NewsHero from "../../../components/latestcenter/NewsHero"
+import { useState } from "react";
 import RightStickyNews from "../../../components/latestcenter/RightStickyNews";
-import posts from '../../../database/db.json'
+import Link from "next/link";
 import fs from 'fs'
 import matter from 'gray-matter'
 
 
+const News =({news})=> {
 
-
-const App = ({users}) => {
-
-  const [load, setLoad] = useState(6);
-  const [isOpen, setIsOpen] = useState(false);
  
-
+  const [load, setLoad] = useState(3);
+  const [isOpen, setIsOpen] = useState(false);
   const loadData = () => {
-    setLoad((prev) => prev + 4);
-  };
+    setLoad((prev) => prev + 3)
+    
+  }
 
-    const handleDropdownClick = () => {
+  const handleDropdownClick = () => {
     setIsOpen(!isOpen);
   };
 
-
+  
   return (
-    <div className="community__page">
-      <div className="community__page__container">
-        <div className="community__hero">
-          <div className="hero__left">
-            <h1>Community</h1>
-            <p>
-              Split Tech City is a community composed of well-intentioned and
-              progressive companies, startups, associations, initiatives,
-              institutions, and individuals. Together we encourage and develop
-              the IT sector of Split and the surrounding region.
-            </p>
-
-          </div>
-          
-          <div className="hero__right">
-            <img
-              className="logo"
-              src="https://images.unsplash.com/photo-1556139943-4bdca53adf1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHZlY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="dropdown">
+    <div>
+        <NewsHero />
+        <Latest/>
+     
+        <div className='latest-center'>
+        <div className="toggle__button__container">
+        <div className="dropdown" >
       <button className="dropdown-btn" onClick={handleDropdownClick}>
         Toggle Dropdown
       </button>
       {isOpen && (
         <div className="dropdown-content">
-        <a><Link href={"/community/"}><p>All</p></Link></a>
-         <a><Link href={"/community/companies"}><p>Companies</p></Link></a>
-         <a><Link href={"/community/startup"}><p>Startups</p></Link></a>
-         <a><Link href={"/community/individual"}><p>Individuals</p></Link></a>
-         <a><Link href={"/community/digital-nomad"}><p>Digital Nomads</p></Link></a>
-         <a><Link href={"/community/coworking-spaces"}><p>Coworking Spaces</p></Link></a>
-         <a><Link href={"/community/institutions"}><p>institutions</p></Link></a>
-         <a><Link href={"/community/organizations"}><p>Organizations</p></Link></a>
+        <a><Link href={"/news/"}><p>All</p></Link></a>
+         <a><Link href={"/news/general"}><p>General</p></Link></a>
+         <a><Link href={"/news/entrepreneurship"}><p>Entrepreneurship</p></Link></a>
+         <a><Link href={"/news/technology"}><p>Technology</p></Link></a>
+         <a><Link href={"/news/design"}><p>Design</p></Link></a>
+         <a><Link href={"/news/digital-nomads"}><p>Digital Nomads</p></Link></a>
+       
         </div>
       )}
     </div>
- 
-
-        <div className="comunity__content">
-          <div className="community__items__container">
-            {users.map(user=> {
-              
-                return (          
-                  <div key={user.slug}>
-                    <Link  href={`/community/${user.category}/${user.slug}`}>
-                      <Item
-                        className="community__items"
-                        key={user.slug}
-                        style={{ backgroundColor: "rgb(238,238,238)" }}
-                      >
-                        <div className="community__logo__container">
-                          <img
-                            className="community__logo"
-                            key={user.slug}
-                            src={user.logo}
-                          />
-                        <div className="community__info__container">
-                        <h3 key={user.slug}>{user.title}</h3>
-                          <p key={user.slug}>{user.category}</p>
-                        </div>
-                        </div>
-                      </Item>
-                    </Link>
+        <div className="center-container">
+           
+            <div className="left-container">
+            {news.map(usernew=> {
+              if(usernew.category== "entrepreneurship"){
+          return(
+         <Link href={`/news/${usernew.category}/${usernew.slug}`}>
+              <div className="left-block" key={usernew.slug} >
+                  <div className="left-img">
+                      <img src={usernew.thumbnail} alt="" />
                   </div>
-                );
-                
-              
-            })}
-       
-       
-         {
-             <button className="load" onClick={loadData}>Load more</button>
-           }
-
-
-        </div>
+                  <div className='left-category'>
+                      {usernew.category}
+                  </div>
+                  <div className='left-title'>
+                  {usernew.title}
+                  </div>
+                  <div className='left-desc line-clamp'>
+                  {usernew.secondtext}
+                  </div>
+                  <div className='left-span-below'> 
+                      
+                      <div>
+                          <img  src={usernew.userlogo} alt="" /> 
+                      
+                      </div>
+                      <div>
+                          <span>{usernew.username} </span>
+                      </div>
+                  </div>
+              </div>  
+         </Link>      
+              );
+            }
+              })}
         
-        <RightStickyNews/>
-
-      </div>
-    </div>
-</div>
-
-  );
-};
+        <button 
+                className='load' 
+                onClick={loadData}
+            >
+                Load More
+            </button>
+                </div>
+                <RightStickyNews/>
+            </div>
+            </div>
+        </div>
+        </div>
+      )
+    }
+    
 
 export async function getStaticProps() {
   // List of files in blgos folder
-  const filesInBlogs = fs.readdirSync('./content/users')
+  const filesInBlogs = fs.readdirSync('./content/news')
 
   // Get the front matter and slug (the filename without .md) of all files
-  const users = filesInBlogs.map(filename => {
-    const file = fs.readFileSync(`./content/users/${filename}`, 'utf8')
+  const news = filesInBlogs.map(filename => {
+    const file = fs.readFileSync(`./content/news/${filename}`, 'utf8')
     const matterData = matter(file)
 
     return {
@@ -131,10 +115,11 @@ export async function getStaticProps() {
 
   return {
     props: {
-      users
+      news
     }
   }
 
 }
 
-export default App;
+export default News
+

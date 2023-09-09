@@ -138,10 +138,19 @@
 
 
 /* styles.css */
+
+.community__dropdown
+{
+    position: relative;
+    align-self: baseline;
+}
+
 .dropdown {
 
-        position: relative;
-        align-self: baseline;
+    position: relative;
+    align-self: baseline;
+        margin-left: 95px;
+        margin-bottom: 15px;
   }
   
   .dropdown-btn {
@@ -150,6 +159,7 @@
     border: 1px solid #ccc;
     padding: 10px;
     cursor: pointer;
+    
   }
   
   .dropdown-content {

@@ -1,5 +1,5 @@
 ---
-category: digital nomads
+category: digital-nomads
 layout: blog
 title: "Coworking Space "
 thumbnail: https://cdn.mos.cms.futurecdn.net/X5NGnGzooL96BuJBcgnWtA.jpg

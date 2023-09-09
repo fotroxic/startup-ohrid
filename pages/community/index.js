@@ -45,7 +45,7 @@ const App = ({users}) => {
             />
           </div>
         </div>
-        <div className="dropdown">
+        <div className="community__dropdown">
       <button className="dropdown-btn" onClick={handleDropdownClick}>
         Toggle Dropdown
       </button>
