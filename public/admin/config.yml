@@ -42,29 +42,15 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "User logo", name: "logo", widget: "image" }
       - { label: "User Name", name: "title", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options: ["startup","digital-nomads","coworking spaces","institution"," organization"]}
+      - { label: "Category", name: "category", widget: "select", options: ["company","individiual","startup","digital-nomads","coworking spaces","institution"," organization"]}
       - { label: "Layout", name: "layout", widget: "hidden", default: "users" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Description", name: "description", widget: "markdown" }
-
-  - name: "specialusers" # Used in routes, e.g., /admin/collections/blog
-    label: "Company and individuals" # Used in the UI
-    folder: "content/specials" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "User logo", name: "logo", widget: "image" }
-      - { label: "User Name", name: "title", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options: ["company","individual"]}
-      - { label: "Layout", name: "layout", widget: "hidden", default: "users" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Firm Name", name: "firmname", widget: "string"}
+      - { label: "OIB num", name: "oibnum", widget: "string"}
+      - { label: "Adress", name: "adress", widget: "string"}
       - { label: "Facebook", name: "facebook", widget: "string" }
       - { label: "LinkedIn", name: "linkedIn", widget: "string" }
       - { label: "Twitter", name: "twitter", widget: "string" }
-      - { label: "Firm Name", name: "firmname", widget: "string" }
-      - { label: "OIB Num", name: "oibnum", widget: "string" }
-      - { label: "Adress", name: "adress", widget: "string" }
-      
+
