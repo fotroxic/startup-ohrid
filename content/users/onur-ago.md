@@ -1,7 +1,7 @@
 ---
 logo: https://media.licdn.com/dms/image/C4E03AQEcr-4wzaNlRQ/profile-displayphoto-shrink_200_200/0/1642820503815?e=1699488000&v=beta&t=5r-WiSQmDBveldKkOF0hjrI3Jk-PSJUKpxt023Ssvs4
 title: Onur Ago
-category: individiual
+category: individual
 layout: users
 thumbnail: https://static.toiimg.com/thumb/msid-84374944,width-1280,height-720,resizemode-4/.jpg
 description: On am we offices expense thought. Its hence ten smile age means.

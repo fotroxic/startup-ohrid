@@ -42,7 +42,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "User logo", name: "logo", widget: "image" }
       - { label: "User Name", name: "title", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options: ["company","individiual","startup","digital-nomads","coworking spaces","institution"," organization"]}
+      - { label: "Category", name: "category", widget: "select", options: ["company","individual","startup","digital-nomads","coworking spaces","institution"," organization"]}
       - { label: "Layout", name: "layout", widget: "hidden", default: "users" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }

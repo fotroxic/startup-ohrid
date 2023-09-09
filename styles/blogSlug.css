@@ -21,7 +21,7 @@
     text-align: center;
     font-size: 50px;
     font-weight: 800;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .post__img
@@ -44,7 +44,7 @@
 .user__logo
 {
    align-self: center;
-    width: 40%;
+    width: 15%;
     border-radius: 50%;
 
    
@@ -70,6 +70,38 @@
   
 }
 
+.user__personal__info{
+    width: 600px;
+    background-color: lightgray;
+    align-self: center;
+    align-items: center;
+    background-color: rgb(235,234,225);
+    padding: 40px;
+}
+
+.firmname
+{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.oibnum
+{
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+.website
+{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(66,103,178);
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 15px;
+    color: #fff;
+}
 .user__info__news
 {
     display: flex;
@@ -118,14 +150,19 @@
  display: flex;
  align-self: center;
  text-align: center;
+ text-transform: uppercase ;
+
 }
 
 .user__category{
     margin-right: 10px;
     line-height: 30px;
-    border: 1px solid black;
+    border: 1px solid darkgray;
+    color: darkgray;
     border-radius: 50px;
     padding: 10px;
+    width: 150px;
+    margin-bottom: 30px;
 }
 
 .social__medias
